@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kolkata's Restaurants</title>
+<meta name="theme-color" content="#FFD700">
+<meta name="description" content="Explore the rich history and taste of Bengali cuisines all over West Bengal on our web page. Dive into the glorious past and dip your food in its taste and just relax!!!">
+<link rel="icon" href="assets/logo.png" type="image/x-icon">
+<style>
+  h1{
+    color: white;
+    text-align: center; 
+  }
+  body {
+    background-image: url("https://images.pexels.com/photos/16565204/pexels-photo-16565204/free-photo-of-victoria-memorial-in-kolkata.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: 1500px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+  }
+  /* Style for horizontal cards */
+  .card-container {
+    display: flex;
+    flex-wrap: nowrap;  /* Removed nowrap */
+    overflow-x: auto; 
+    gap: 30px; 
+    padding: 20px;
+  }
+  
+  .card {
+    background-image: url("https://media.istockphoto.com/id/1190475811/photo/rush-in-the-city.jpg?s=612x612&w=0&k=20&c=PKpWSnamJ8tjwCcRE1xFnc8n14Pv0u3ahDzNFuGIPa4=");
+    background-size: 590px;
+    flex: 0 0 auto; 
+    width: 550px; 
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(244, 216, 4, 0.973);
+  }
+
+  .card p{
+    color: whitesmoke;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+   .card h2{
+    color: mediumspringgreen;
+    text-align: center;
+   }
+  img {
+  width: 550px;
+  height: 400px;
+  border-radius: 30px;}
+
+  .card-button {
+    display: block;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+
+    .card.active .card-button {
+      display: block;
+    }
+    
+
+.card-button:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.card {
+  cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .card-container {
+        flex-wrap: wrap;
+        overflow-x: visible;
+      }
+      .card {
+        width: 90%;
+        background-size: cover;
+      }
+      .card img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+</style>
+</head>
+<body>
+
+  <h1>
+    BIRYANI 
+  </h1>
+  <section class="card-container" id="food1">
+    <div class="card">
+      <img src="assets_Kolkata/Arsalan.jpeg" alt="ARSALAN"/>
+      <h2>ARSALAN</h2> 
+      <p>Address :-&nbsp;&nbsp;&nbsp; 191, 7 Point, Marina Garden Court, Mother Teresa Sarani, Ballygunge, Kolkata - 700017</p>
+      <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.7 &nbsp;/&nbsp;5</p>  
+      <p>Average Cost for two   :-&nbsp;&nbsp;Rs&nbsp;1100 - 1200</p>
+      <div class="card-dropdown">
+        <button class="card-button" onclick="openWebsite('https://arsalanrestaurants.com/')">Visit Website</button>
+      </div> 
+    </div>
+    
+    <div class="card">
+      <img src="assets_Kolkata/Aminia.jpeg" alt="AMINIA"/>
+      <h2>AMINIA</h2>
+      <p>Address :-&nbsp;&nbsp;&nbsp;Meena Tower, New Town, Rajarhat, Kolkata - 700137</p>
+      <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.4 &nbsp;/&nbsp;5</p>
+      <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;1100 - 1200</p>
+      <div class="card-dropdown">
+        <button class="card-button" onclick="openWebsite('https://www.aminia.co.in/')">Visit Website</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="assets_Kolkata/DadaBoudi.jpeg" alt="DADA BOUDI"/>
+      <h2>DADA BOUDI</h2>
+      <p>Address :-&nbsp;&nbsp;&nbsp;P.O Barrackpore, P.S Titagarh North 24 Praganas, 12/1 Barrackpore S.N.Banerjee Road, Barrackpore, Kolkata - 700120 (Opposite Sukanto Sadan)</p>
+      <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.1 &nbsp;/&nbsp;5</p>
+      <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;1000 - 1100</p>
+      <div class="card-dropdown">
+        <button class="card-button" onclick="openWebsite('https://dadaboudibiryani.in/')">Visit Website</button>
+      </div>
+    </div>
+</section>
+
+<h1>
+  KOSHA MANGSHO 
+</h1>
+<section class="card-container" id="food2">
+  <div class="card">
+    <img src="assets_Kolkata/Aaheli.jpeg" alt="AAHELI"/>
+    <h2>AAHELI</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;The Peerless Inn Kolkata, 12, Jawaharlal Nehru Road, 1st Floor, New Market Area, Dharmatala, Taltala, Kolkata - 700013</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;5&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;1000 - 2000</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://peerlesshotels.com/the-peerless.php')">Visit Website</button>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="assets_Kolkata/GolBari.jpeg" alt="GOLBARI"/>
+    <h2>GOLBARI</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;Acharya Prafulla Chandra Rd, Shyambazar, Fariapukur, Kolkata - 700004</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;400 - 600</p>
+  </div>
+  
+  <div class="card">
+    <img src="assets_Kolkata/ZeeShan.jpeg" alt="ZEESHAN"/>
+    <h2>ZEESHAN</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;9/A, Syed Amir Ali Ave, Park Circus, Ballygunge, Kolkata - 700017</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;&nbsp;4/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;300 - 400</p>
+  </div>
+</section>
+
+<h1>
+  CHELOW KABAB 
+</h1>
+<section class="card-container" id="food3">
+  <div class="card">
+    <img src="assets_Kolkata/PepperChino.jpeg" alt="PEPPER CHINO"/>
+    <h2>PEPPER CHINO</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;Hotel Samilton, 35A, Sarat Bose Rd, Paddapukur, Bhowanipore, Kolkata - 700020</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.5&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;1000 - 1500</p>
+  </div>
+  
+  <div class="card">
+    <img src="assets_Kolkata/PeterCat.jpeg" alt="PETER CAT"/>
+    <h2>PETER CAT</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;Stephen Court Building, 18 A, Mother Teresa Sarani, opposite KFC Restaurant, Park Street area, Kolkata - 700016</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.4&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two:-&nbsp;&nbsp;Rs&nbsp;700 - 900</p>
+  </div>
+  
+  <div class="card">
+    <img src="assets_Kolkata/MarcoPolo.jpeg" alt="MARCO POLO"/>
+    <h2>MARCO POLO</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;Ground Magma Building, 24, Mother Teresa Sarani, Mamagoto, Kolkata - 700016</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.2&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;900 -1000</p>
+  </div>
+</section>
+
+<h1>
+  CHITAL MACHER MUITHYA 
+</h1>
+<section class="card-container" id="food4">
+  <div class="card">
+    <img src="assets_Kolkata/Aaheli.jpeg" alt="AAHELI"/>
+    <h2>AAHELI</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;The Peerless Inn Kolkata, 12, Jawaharlal Nehru Road, 1st Floor, New Market Area, Dharmatala, Taltala, Kolkata - 700013</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;5&nbsp;&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;1000 - 1700</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://peerlesshotels.com/the-peerless.php')">Visit Website</button>
+    </div>
+  </div> 
+  <div class="card">
+    <img src="assets_Kolkata/Kopai.jpeg" alt="KOPAI"/>
+    <h2>KOPAI</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;213, Opp:Post office, Sarat Bose Rd, Kolkata - 700029</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;500 - 600</p>
+  </div>
+  
+  <div class="card">
+    <img src="assets_Kolkata/BhuterRajaDilbar.jpeg" alt="BHOOTER RAJA DILO BOR"/>
+    <h2>BHOOTER RAJA DILO BOR</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;1F, Raja Subodh Chandra Mallick Rd, Santi Pally, Jadavpur, Kolkata - 700032</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;3.8&nbsp;&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;200 - 300</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://bhooterrajadilobor.com/')">Visit Website</button>
+    </div>
+  </div>
+</section>
+
+<h1>
+  BHETKI PATURI 
+</h1>
+<section class="card-container" id="food5">
+  <div class="card">
+  <img src="assets_Kolkata/BhuterRajaDilbar.jpeg" alt="BHOOTER RAJA DILO BOR"/>
+  <h2>BHOOTER RAJA DILO BOR</h2>
+  <p>Address :-&nbsp;&nbsp;&nbsp;1F, Raja Subodh Chandra Mallick Rd, Santi Pally, Jadavpur, Kolkata - 700032</p>
+  <p>Dining Ratings:-&nbsp;&nbsp;3.8&nbsp;&nbsp;/&nbsp;5</p>
+  <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;200 - 300</p>
+  <div class="card-dropdown">
+    <button class="card-button" onclick="openWebsite('https://bhooterrajadilobor.com/')">Visit Website</button>
+  </div>
+  </div> 
+  <div class="card">
+    <img src="assets_Kolkata/Aaheli.jpeg" alt="AAHELI"/>
+    <h2>AAHELI</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;The Peerless Inn Kolkata, 12, Jawaharlal Nehru Road, 1st Floor, New Market Area, Dharmatala, Taltala, Kolkata - 700013</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;5&nbsp;&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;1000 - 1700</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://peerlesshotels.com/the-peerless.php')">Visit Website</button>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="assets_Kolkata/Kopai.jpeg" alt="KOPAI"/>
+    <h2>KOPAI</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;213, Opp:Post office, Sarat Bose Rd, Kolkata - 700029</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;500 - 600</p>
+  </div>
+</section>
+
+<h1>
+  BHAPA ILISH 
+</h1>
+<section class="card-container" id="food6">
+  <div class="card">
+    <img src="assets_Kolkata/Aaheli.jpeg" alt="AAHELI"/>
+    <h2>AAHELI</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;The Peerless Inn Kolkata, 12, Jawaharlal Nehru Road, 1st Floor, New Market Area, Dharmatala, Taltala, Kolkata - 700013</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;5&nbsp;&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;1000 - 1700</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://peerlesshotels.com/the-peerless.php')">Visit Website</button>
+    </div>
+  </div> 
+  <div class="card">
+    <img src="assets_Kolkata/MarcoPolo.jpeg" alt="MARCO POLO"/>
+    <h2>MARCO POLO</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;Ground Magma Building, 24, Mother Teresa Sarani, Mamagoto, Kolkata - 700016</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.2&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;900 -1000</p>
+  </div>
+  
+  <div class="card">
+    <img src="assets_Kolkata/Kopai.jpeg" alt="KOPAI"/>
+    <h2>KOPAI</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;213, Opp:Post office, Sarat Bose Rd, Kolkata - 700029</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;500 - 600</p>
+  </div>
+</section>
+
+<h1>
+  FISH FRY 
+</h1>
+<section class="card-container" id="food7">
+  <div class="card">
+    <img src="assets_Kolkata/MitraCafe.jpeg" alt="MITRA CAFE"/>
+    <h2>MITRA CAFE</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;47, Jatindra Mohan Avenue, Kolkata – 700 005</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.4&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;200 - 400</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://mitracafe.co.in/')">Visit Website</button>
+    </div>
+  </div> 
+  <div class="card">
+    <img src="assets_Kolkata/Apanjan.jpeg" alt="APANJAN"/>
+    <h2>APANJAN</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;58, Sadananda Rd, Anami Sangha, Kalighat, Kolkata - 700026</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.3&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;300 - 500</p>
+  </div>
+  
+  <div class="card">
+    <img src="assets_Kolkata/BizzliGrill.jpeg" alt="BIJOLI GRILL"/>
+    <h2>BIJOLI GRILL</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;124B, Dr Meghnad Saha Sarani, Southern Avenue, Opposite Nazrul Mancho Kolkata - 700029</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.2&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;300 - 500</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('http://bijoligrill.com/kolkata.php')">Visit Website</button>
+    </div>
+  </div>
+</section>
+
+<h1>
+  PRAWN MALAI CURRY 
+</h1>
+<section class="card-container" id="food8">
+  <div class="card">
+    <img src="assets_Kolkata/BallygungePlace.jpeg" alt="6, BALLYGUNGE PLACE"/>
+    <h2>6, BALLYGUNGE PLACE</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;6, Dr Amiya Bose Sarani Rd, near Patha Bhavan School, Ballygunge Place, Ballygunge, Kolkata - 700019</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.5&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;1000 - 2500</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://6ballygungeplace.in/')">Visit Website</button>
+    </div>
+  </div> 
+  <div class="card">
+    <img src="assets_Kolkata/Kopai.jpeg" alt="KOPAI"/>
+    <h2>KOPAI</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;213, Opp:Post office, Sarat Bose Rd, Kolkata - 700029</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;300 - 700</p>
+  </div>
+  
+  <div class="card">
+    <img src="assets_Kolkata/Aaheli.jpeg" alt="AAHELI"/>
+    <h2>AAHELI</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;The Peerless Inn Kolkata, 12, Jawaharlal Nehru Road, 1st Floor, New Market Area, Dharmatala, Taltala, Kolkata - 700013</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;5&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;3000 - 4000</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://peerlesshotels.com/the-peerless.php')">Visit Website</button>
+    </div>
+  </div>
+</section>
+
+<h1>
+  SHARWARMA ROLLS
+</h1>
+<section class="card-container" id="food9">
+  <div class="card">
+    <img src="assets_Kolkata/Shawarma Rolls.jpg" alt="SHAWARMA KINGDOM"/>
+    <h2>SHAWARMA KINGDOM</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;60, Chowringee Rd, Sreepally, Taltala, Kolkata - 700020</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.4&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;200 - 300</p>
+  </div> 
+  <div class="card">
+    <img src="https://content.jdmagicbox.com/comp/kolkata/a1/033pxx33.xx33.190918192954.n5a1/catalogue/shawarma-nation-bidhan-nagar-kolkata-shawarma-centres-7lxufmf6js.jpg" alt="SHAWARMA NATION"/>
+    <h2>SHAWARMA NATION</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;G925+P3C, Bhanumati Road, Rajendra Prasad Colony, Tollygunge, Kolkata - 700045</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.2&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;200 - 500</p>
+  </div>
+  
+  <div class="card">
+    <img src="https://b.zmtcdn.com/data/pictures/4/23214/082acea76ef841a2802b819d3d24e12e.jpg" alt="GO LEBANESE"/>
+    <h2>GO LEBANESE</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;200, Sarat Bose Rd, lake Terrace, Ballygunge, Kolkata - 700029</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;150 - 400</p>
+  </div>
+</section>
+
+<h1>
+  DAAB CHINGRI 
+</h1>
+<section class="card-container" id="food10">
+  <div class="card">
+    <img src="assets_Kolkata/Aaheli.jpeg" alt="AAHELI"/>
+    <h2>AAHELI</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;The Peerless Inn Kolkata, 12, Jawaharlal Nehru Road, 1st Floor, New Market Area, Dharmatala, Taltala, Kolkata - 700013</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;5&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;3000 - 4000</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://peerlesshotels.com/the-peerless.php')">Visit Website</button>
+    </div>
+  </div> 
+  <div class="card">
+    <img src="assets_Kolkata/Kopai.jpeg" alt="KOPAI"/>
+    <h2>KOPAI</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;213, Opp:Post office, Sarat Bose Rd, Kolkata, West Bengal 700029</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;400 - 800</p>
+  </div>
+  
+  <div class="card">
+    <img src="https://content.jdmagicbox.com/comp/kolkata/g4/033pxx33.xx33.200828090608.p4g4/catalogue/bhojohori-manna-hatiara-kolkata-home-delivery-restaurants-r96ae4414q.jpg" alt="BHOJOHORI MANNA"/>
+    <h2>BHOJOHORI MANNA</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;Shop No.9, 18, Ekdalia Rd, Ekdalia, Gariahat, Kolkata - 700019</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4&nbsp;/&nbsp;5</p>
+    <p>Average Cost for two :-&nbsp;&nbsp;Rs&nbsp;300 - 700</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://bhojohorimanna.com/')">Visit Website</button>
+    </div>
+  </div>
+</section>
+
+<h1>
+  ROSOGOLLA 
+</h1>
+<section class="card-container" id="food11">
+  <div class="card">
+    <img src="assets_Kolkata/Balaram.jpeg" alt="BALARAM MULLICK & RADHARAMAN MULLICK"/>
+    <h2>BALARAM MULLICK & RADHARAMAN MULLICK</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;2, Paddapukur Rd, Jadubabur Bazar, Bhowanipore, Kolkata - 700020</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.5&nbsp;/&nbsp;5</p>
+    <p>Average Cost for 5 pcs(baked) :-&nbsp;&nbsp;Rs&nbsp;125</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://balarammullick.com/')">Visit Website</button>
+    </div>
+  </div> 
+  <div class="card">
+    <img src="assets_Kolkata/NalinChandra.jpeg" alt="NALIN CH DAS & SONS"/>
+    <h2>NALIN CH DAS & SONS</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;84,Rashbehari Avenue Kolkata-700 026</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.3&nbsp;/&nbsp;5</p>
+    <p>Average Cost for 360 pcs :-&nbsp;&nbsp;Rs&nbsp;360</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('http://www.nalinchandradas.com/')">Visit Website</button>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="assets_Kolkata/KCDas.jpeg" alt="K.C. DAS GRANDSON PVT LTD."/>
+    <h2>K.C. DAS</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;Tram Depot, No. 124B, Shyama Prasad Mukherjee Rd, opposite Kalighat, Kalighat, Kolkata - 700026</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4 &nbsp;/&nbsp;5</p>
+    <p>Average Cost for 20 pcs :-&nbsp;&nbsp;Rs&nbsp;259</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://kcdasonline.com/')">Visit Website</button>
+    </div>
+  </div>
+</section>
+
+<h1>
+  MISHTI DOI 
+</h1>
+<section class="card-container" id="food12">
+  <div class="card">
+    <img src="assets_Kolkata/Balaram.jpeg" alt="BALARAM MULLICK & RADHARAMAN MULLICK"/>
+    <h2>BALARAM MULLICK & RADHARAMAN MULLICK</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;2, Paddapukur Rd, Jadubabur Bazar, Bhowanipore, Kolkata - 700020</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.5&nbsp;/&nbsp;5</p>
+    <p>Average Cost for 500 gm :-&nbsp;&nbsp;Rs&nbsp;245</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://balarammullick.com/')">Visit Website</button>
+    </div>
+  </div> 
+  <div class="card">
+    <img src="assets_Kolkata/Mithai.jpeg" alt="MITHAI"/>
+    <h2>MITHAI</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;48B, Syed Amir Ali Avenue Kolkata- 700 017</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.4&nbsp;/&nbsp;5</p>
+    <p>Average Cost for 500 gm :-&nbsp;&nbsp;Rs&nbsp;183</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://www.mithaikolkata.com/')">Visit Website</button>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="assets_Kolkata/PutiRam.jpeg" alt="PUTIRAM SWEETS"/>
+    <h2>PUTIRAM SWEETS</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;46, Amherst St, Lalbajar, College Row, Machuabazar, Kolkata, West Bengal 700009</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.2&nbsp;/&nbsp;5</p>
+    <p>Average Cost for 500 gm :-&nbsp;&nbsp;Rs&nbsp;140</p>
+  </div>
+</section>
+
+<h1>
+  NOLEN GURER SONDESH 
+</h1>
+<section class="card-container" id="food13">
+  <div class="card">
+    <img src="assets_Kolkata/Girish.jpeg" alt="GIRISH CH DEY & NAKUR CH NANDY"/>
+    <h2>GIRISH CH DEY & NAKUR CH NANDY</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;56, Ramdulal Sarkar St, near Bethune college, Hedua, Kolkata, West Bengal 700006</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.8&nbsp;/&nbsp;5</p>
+    <p>Average Cost for 12 pcs :-&nbsp;&nbsp;Rs&nbsp;300</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://www.girishnakur.com/')">Visit Website</button>
+    </div>
+  </div> 
+  <div class="card">
+    <img src="assets_Kolkata/KamdhenuSweets.jpeg" alt="KAMDHENU'S SWEETS"/>
+    <h2>KAMDHENU'S SWEETS</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;419, Brahmo Samaj Rd, Behala, Kolkata - 700038</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;3.9&nbsp;/&nbsp;5</p>
+    <p>Average Cost for 12 pcs :-&nbsp;&nbsp;Rs&nbsp;400</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('http://www.kamdhenusweets.com/')">Visit Website</button>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="assets_Kolkata/Balaram.jpeg" alt="BALARAM MULLICK & RADHARAMAN MULLICK"/>
+    <h2>BALARAM MULLICK & RADHARAMAN MULLICK</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;2, Paddapukur Rd, Jadubabur Bazar, Bhowanipore, Kolkata - 700020</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.5&nbsp;/&nbsp;5</p>
+    <p>Average Cost for 500 gm :-&nbsp;&nbsp;Rs&nbsp;245</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://balarammullick.com/')">Visit Website</button>
+    </div>
+  </div>
+</section>
+
+<h1>
+  PHIRNI
+</h1>
+<section class="card-container" id="food14">
+  <div class="card">
+    <img src="assets_Kolkata/India.jpeg" alt="INDIA RESTAURANT"/>
+    <h2>INDIA RESTAURANT</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;34, Karl Marx Sarani Rd, Khidirpur, Kolkata, West Bengal 700023</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.4&nbsp;/&nbsp;5</p>
+    <p>Average Cost for 2 pcs :-&nbsp;&nbsp;Rs&nbsp;190</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://indiarestaurant.co.in/')">Visit Website</button>
+    </div>
+  </div> 
+  <div class="card">
+    <img src="assets_Kolkata/Dawat.jpeg" alt="DAWAT"/>
+    <h2>DAWAT</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;9 A, Marquis St, near Jamuna Cinema, New Market Area, Taltala, Kolkata, West Bengal 700016</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.4&nbsp;/&nbsp;5</p>
+    <p>Average Cost for 2 pcs :-&nbsp;&nbsp;Rs&nbsp;220</p>
+  </div>
+  
+  <div class="card">
+    <img src="assets_Kolkata/ZeeShan.jpeg" alt="ZEESHAN"/>
+    <h2>ZEESHAN</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;9/A, Syed Amir Ali Ave, Park Circus, Ballygunge, Kolkata - 700017</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;&nbsp;4/&nbsp;5</p>
+    <p>Average Cost for 2 pcs :-&nbsp;&nbsp;Rs&nbsp;140</p>
+  </div>
+</section>
+
+<h1>
+  SHARBAT 
+</h1>
+<section class="card-container" id="food15">
+  <div class="card">
+    <img src="assets_Kolkata/Paramount.jpeg" alt="PARAMOUNT"/>
+    <h2>PARAMOUNT</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;1, 1, Bankim Chatterjee St, B. C. Street, College Square, Kolkata - 700073</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.6&nbsp;/&nbsp;5</p>
+    <p>Cost of Sharbat per Bottle :-&nbsp;&nbsp;Rs&nbsp;160</p>
+  </div> 
+  <div class="card">
+    <img src="assets_Kolkata/ShivAssram.jpeg" alt="SHIV ASSRAM"/>
+    <h2>SHIV ASSRAM</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp;168, Bidhan Sarani, Beadon Street, Kolkata - 700006, near Hedua.</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.4&nbsp;/&nbsp;5</p>
+    <p>Cost of Sharbat per Glass :-&nbsp;&nbsp;Rs&nbsp;20</p>
+  </div>
+  
+  <div class="card">
+    <img src="assets_Kolkata/KapilaAshram.jpeg" alt="KAPILA ASHRAM"/>
+    <h2>KAPILA ASHRAM</h2>
+    <p>Address :-&nbsp;&nbsp;&nbsp; 206, Bidhan Sarani, Machuabazar, Kolkata (Calcutta) - 700006.</p>
+    <p>Dining Ratings:-&nbsp;&nbsp;&nbsp;4.1&nbsp;/&nbsp;5</p>
+    <p>Cost of Sharbat per Glass :-&nbsp;&nbsp;Rs&nbsp;50</p>
+  </div>
+</section>
+
+<script>
+  function openWebsite(url) {
+    window.open(url, "_blank");
+}
+</script>
+</body>
+</html>

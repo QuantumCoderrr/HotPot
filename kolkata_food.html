@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kolkata's Delicacies</title>
+<meta name="theme-color" content="#FFD700">
+<meta name="description" content="Explore the rich history and taste of Bengali cuisines all over West Bengal on our web page. Dive into the glorious past and dip your food in its taste and just relax!!!">
+<link rel="icon" href="assets/logo.png" type="image/x-icon">
+<style>
+  h1{
+    color:rgb(0, 0, 0);
+    text-align: center; /* Added center alignment */
+  }
+  
+  body {
+    background-image: url("https://thumbs.dreamstime.com/b/general-post-office-view-general-post-office-kolkata-131674198.jpg");
+    background-size: 1050px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+  }
+  /* Style for horizontal cards */
+  .card-container {
+    display: flex;
+    flex-wrap: nowrap;  /* Removed nowrap */
+    overflow-x: auto; 
+    gap: 30px; 
+    padding: 20px;
+  }
+  
+  .card {
+    background-image: url("https://i.pinimg.com/originals/90/1c/ec/901cecca687b5a44d56ad823aa7005da.jpg");
+    background-size: 590px;
+    flex: 0 0 auto; 
+    width: 550px; 
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(244, 216, 4, 0.973);
+  }
+
+  .card-button {
+    display: block;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+
+    .card.active .card-button {
+      display: block;
+    }
+    
+
+.card-button:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.card {
+  cursor: pointer;
+    }
+
+  .card p{
+    color: aqua;
+    text-align:justify ;
+    font-family: Papyrus;
+   }
+   .card h2{
+    color: whitesmoke;
+    text-align: center;
+   }
+  img {
+  width: 550px;
+  height: 330px;
+  border-radius: 30px;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: calc(50% - 20px); /* Two cards per row */
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-wrap: wrap; 
+    overflow-x: visible; 
+  }
+  .card {
+    width: 90%; 
+    background-size: cover;
+  }
+  .card img {
+    max-width: 100%; 
+    height: auto; 
+  }
+}
+
+</style>
+</head>
+<body>
+  <h1>
+    DELICIOUS KOLKATA FOODS 
+  </h1>
+
+<div class="card-container">
+  <section class="card" id="biriyani">
+    <img src="assets_Kolkata/Biriyani.jpg" alt="BIRYANI" />
+    <h2>BIRYANI</h2>
+    <p>Biryani is a mixed rice dish, mainly popular in South Asia. It is made with rice, some type of meat (chicken, beef, prawn, or mutton) and spices specially with eggs which is popular in Kolkata. </p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food1')">Looking for restaurants</button>
+    </div>
+  </section>
+
+  <section class="card" id="kosha-mangsho">
+    <img src="assets_Kolkata/KoshaMansho.jpg" alt="KOSHA MANGSHO" />
+    <h2>KOSHA MANGSHO</h2>
+    <p>Kosha mangsho is the Bengali version of mutton curry. It traditionally has less juice and more gravy than mutton curries eaten in other parts of India. This dish is prepared in a kosha style, which involves retaining the mutton's flavour and moisture using slow cooking and sautéeing methods.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food2')">Looking for restaurants</button>
+    </div>
+  </section>
+
+  <section class="card" id="chelow-kebab">
+    <img src="assets_Kolkata/CheloKabaab.jpg" alt="CHELOW KEBAB" />
+    <h2>CHELOW KEBAB</h2>
+    <p>Chelow kebab is grilled kebabs served with rice,tomatoes,meats, including lamb, chicken and comes in many varieties, including barbecued, minced, and grilled. The dish is often served with buttered saffron rice, roasted tomatoes, and an egg.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food3')">Looking for restaurants</button>
+    </div>
+  </section>
+</div>
+
+
+
+<div class="card-container">
+  <section class="card" id="chitol">
+    <img src="assets_Kolkata/ChitolMacherMuthiya.jpg" alt="CHITAL MACHER MUITHYA" />
+    <h2>CHITAL MACHER MUITHYA</h2>
+    <p>Chitol Macher Muithya is a delicious dish, do try this Bengali Fish Curry cooked with fishballs.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food4')">Looking for restaurants</button>
+  </div>
+  </section>
+  <section class="card" id="bhetki">
+    <img src="assets_Kolkata/BhetkiPaturi.jpg" alt="BHETKI PATURI" />
+    <h2>BHETKI PATURI</h2>
+    <p>Bhetki paturi is a Bengali dish of fish fillets steamed in banana leaves, where "bhetki" refers to the Barramundi fish, "maach" means fish, and "paturi" means leaf. It's a popular dish that's commonly found at restaurants and in homes.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food5')">Looking for restaurants</button>
+  </div>
+  </section>
+  <section class="card" id="ilish">
+    <img src="assets_Kolkata/BhapaElish.jpg" alt="BHAPA ILISH" />
+    <h2>BHAPA ILISH</h2>
+    <p>Bhapa Ilish, also known as shorshe ilish bhapa, is a Bengali dish of hilsa fish steamed in a paste of mustard, yogurt, and coconut.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food6')">Looking for restaurants</button>
+  </div>
+  </section>
+</div>
+
+
+<div class="card-container">
+  <section class="card" id="fish-fry">
+    <img src="assets_Kolkata/FishFry.jpg" alt="FISH FRY" />
+    <h2>FISH FRY</h2>
+    <p>A fish fry is a meal containing battered or breaded fried fish. It usually also includes french fries, coleslaw, macaroni salad, lemon slices, tartar sauce, hot sauce, malt vinegar and dessert.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food7')">Looking for restaurants</button>
+  </div>
+  </section>
+
+  <section class="card" id="prawn">
+    <img src="assets_Kolkata/PrawnMalaiCurry.jpg" alt="PRAWN MALAI CURRY " />
+    <h2>PRAWN MALAI CURRY</h2>
+    <p>Prawn malai curry, also known as chingri malai curry or malai chingri, is a Bengali dish of prawns and tiger meat in coconut milk with spices. The prawns are called chingri, and the tiger is called bagda in Bengali. The dish has a smooth coconut milk gravy and is made with whole spices like bay leaf, cardamom, cloves, and cinnamon.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food8')">Looking for restaurants</button>
+  </div>
+  </section>
+
+  <section class="card" id="shawarma">
+    <img src="assets_Kolkata/Shawarma Rolls.jpg" alt="SHAWARMA ROLLS " />
+    <h2>SHAWARMA ROLLS</h2>
+    <p>Shawarma Rolls consisting of mutton/lamb/chicken that is cut into thin slices, stacked in an inverted cone and roasted on a slow-turning vertical spit.The surface of the rotisserie meat is routinely shaved off once it cooks and is ready to be served wrapped in a hand made bread.</p>
+  <div class="card-dropdown">
+    <button class="card-button" onclick="scrollToSection('food9')">Looking for restaurants</button>
+  </div>
+  </section>
+</div>
+
+<div class="card-container">
+ 
+  <section class="card" id="chingri">
+    <img src="assets_Kolkata/DaabChingri.jpg" alt="DAAB CHINGRI" />
+    <h2>DAAB CHINGRI</h2>
+    <p>Daab chingri, also known as chingri daab, is a Bengali prawn curry, cooked and served in a green coconut shell.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food10')">Looking for restaurants</button>
+    </div>
+  </section>
+  <section class="card" id="rosogolla">
+    <img src="assets_Kolkata/Rosogolla.jpg" alt="ROSOGOLLA" />
+    <h2>ROSOGOLLA</h2>
+    <p>Rosogolla is a syrupy dessert popular in the eastern part of South Asia. It is made from ball-shaped dumplings of chhena dough, cooked in light sugar syrup. This is done until the syrup permeates the dumplings.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food11')">Looking for restaurants</button>
+  </div>  
+  </section>
+  <section class="card" id="curd">
+    <img src="assets_Kolkata/MistiDoi.jpg" alt="MISHTI DOI" />
+    <h2>MISHTI DOI</h2>
+    <p>Mishti doi is a fermented sweet curd originating from West Bengal. It is made with milk and sugar or jaggery. It differs from the plain yogurt because of the technique of preparation.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food12')">Looking for restaurants</button>
+    </div>
+  </section>
+</div>
+
+<div class="card-container">
+  <section class="card" id="sondesh">
+    <img src="assets_Kolkata/Nolengurer Sondesh.jpeg" alt="NOLEN GURER SONDESH" />
+    <h2>NOLEN GURER SONDESH</h2>
+    <p>Nolen Gurer Sondesh (Cottage Cheese Fudge with Date Palm Jaggery) is a popular sweet from West Bengal. This is a staple winter dessert recipe in West Bengal as nolen gur is available during this season. Gur Sandesh or gurer sondesh is prepared using freshly made chana or chena (homemade cottage cheese) and nolen gur or notun gur or khejur gur (date palm jaggery).</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food13')">Looking for restaurants</button>
+  </div>
+  </section>
+  <section class="card" id="phirni">
+    <img src="assets_Kolkata/Phirni.jpg" alt="PHIRNI" />
+    <h2>PHIRNI</h2>
+    <p> Phirni is a dessert from North India made with ground rice or rice flour cooked in milk. It is eaten chilled and traditionally served in clay bowls. </p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food14')">Looking for restaurants</button>
+    </div>
+  </section>
+  <section class="card" id="sharbat">
+    <img src="assets_Kolkata/Sharbat.jpg" alt="SHARBAT" />
+    <h2>SHARBAT</h2>
+    <p>Sharbat is a frozen dessert made from water, sugar, dairy, and flavouring. Dairy typically includes milk or cream, and flavourings can include fruit juice, wine, liqueur, vanilla, chocolate, or peppermint.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food15')">Looking for restaurants</button>
+    </div>
+  </section>
+</div>
+
+<script>
+  document.querySelectorAll('.card-button').forEach(function(button) {
+    button.addEventListener('click', function() {
+      button.parentElement.classList.toggle('hidden');
+      button.parentElement.nextElementSibling.classList.toggle('show');
+    });
+  });
+    
+  function scrollToSection(sectionId) {
+    window.location.href = "kolkata_restaurants.html#" + sectionId;
+}
+</script>
+
+</body>
+</html>

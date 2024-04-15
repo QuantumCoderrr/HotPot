@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mumbai's Delicacies</title>
+<meta name="theme-color" content="#FFD700">
+<meta name="description" content="Explore the rich history and taste of Marathi cuisines all over Maharashtra on our web page. Dive into the glorious past and dip your food in its taste and just relax!!!">
+<link rel="icon" href="assets/logo.png" type="image/x-icon">
+<style>
+  h1{
+    color:rgb(0, 0, 0);
+    text-align: center; /* Added center alignment */
+  }
+  
+  body {
+    background-image: url("assets_mumbai/shivaji_terminus.webp");
+    background-size: 1050px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+  }
+  /* Style for horizontal cards */
+  .card-container {
+    display: flex;
+    flex-wrap: nowrap;  /* Removed nowrap */
+    overflow-x: auto; 
+    gap: 30px; 
+    padding: 20px;
+  }
+  
+  .card {
+    background-image: url("assets_mumbai/gateway_of_india.jpg");
+    background-size: 590px;
+    flex: 0 0 auto; 
+    width: 550px; 
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(244, 216, 4, 0.973);
+  }
+
+  .card-button {
+    display: block;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+
+    .card.active .card-button {
+      display: block;
+    }
+    
+
+.card-button:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.card {
+  cursor: pointer;
+    }
+
+  .card p{
+    color: aqua;
+    text-align:justify ;
+    font-family: Papyrus;
+   }
+   .card h2{
+    color: whitesmoke;
+    text-align: center;
+   }
+  img {
+  width: 550px;
+  height: 330px;
+  border-radius: 30px;
+}
+
+    /* Responsive layout for smaller screens */
+    @media (max-width: 768px) {
+  .card-container {
+    flex-wrap: wrap; 
+    overflow-x: visible; 
+  }
+  .card {
+    width: 90%; 
+    background-size: cover;
+  }
+  .card img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+
+</style>
+</head>
+<body>
+  <h1>
+    DELICIOUS MUMBAI FOODS 
+  </h1>
+
+<div class="card-container">
+  <section class="card" id="batatavada">
+    <img src="assets_mumbai/batata-vada.jpg" alt="BATATA VADA" />
+    <h2>BATATA VADA</h2>
+    <p>Batata vada is a popular vegetarian fast food dish from the Indian state of Maharashtra. The dish consists of a mashed potato patty coated with chickpea flour, which is then deep-fried and served hot with chutney. Across different regions of India, this dish is also known as aloo bonda, aloo vada, batata bonda, potato bonda and potato vada.</p>    
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food1')">Looking for restaurants</button>
+    </div>
+  </section>
+
+  <section class="card" id="bombaysandwich">
+    <img src="assets_mumbai/thebombaysandwich.jpg" alt="THE BOMBAY SANDWICH" />
+    <h2>THE BOMBAY SANDWICH</h2>
+    <p>A Bombay  Sandwich - also known as a Mumbai Sandwich is an Indian Sandwich that is popular in the streets of Mumbai.This vegetable sandwich is made with green chutney, butter, veggies, cheese, and chat masala. You can enjoy this sandwich grilled or not, it tastes great either way.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food2')">Looking for restaurants</button>
+    </div>
+  </section>
+
+  <section class="card" id="bhelpuri">
+    <img src="assets_mumbai/bhelpuri.jpg" alt="BHELPURI" />
+    <h2>BHELPURI</h2>
+    <p>Bhelpuri is a savoury snack originally from India, and is also a type of chaat. It is made of puffed rice, vegetables and a tangy tamarind sauce, and has a crunchy texture. The Mumbai recipe has spread to most parts of India, where it has been modified to suit local food availability.</p>    
+  <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food3')">Looking for restaurants</button>
+    </div>
+  </section>
+</div>
+
+
+
+<div class="card-container">
+  <section class="card" id="chickenmayoroll">
+    <img src="assets_mumbai/chickenmayoroll.webp" alt="CHICKEN MAYO ROLL" />
+    <h2>CHICKEN MAYO ROLL</h2>
+    <p>The Chicken Mayo Roll is a popular street food item in Mumbai, typically consisting of cooked chicken pieces mixed with mayonnaise and wrapped in a soft, thin flatbread or roti. It's often served with spicy chutney or sauce for added flavour. It's a savoury and satisfying snack that's enjoyed by locals and visitors alike for its delicious combination of flavours and textures.</p>    
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food4')">Looking for restaurants</button>
+  </div>
+  </section>
+  <section class="card" id="ragdapattice">
+    <img src="assets_mumbai/ragdapattice.jpg" alt="RAGDA PATTICE" />
+    <h2>RAGDA PATTICE</h2>
+    <p>Ragda patties (colloquially ragda pattice) is a dish of mashed potato patties and pea sauce, and is part of the street food culture in the Indian state of Maharashtra. This dish is a popular street food offering and is also served at restaurants.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food5')">Looking for restaurants</button>
+  </div>
+  </section>
+  <section class="card" id="butterchicken">
+    <img src="assets_mumbai/butter-chicken-.jpg" alt="BUTTER CHICKEN" />
+    <h2>BUTTER CHICKEN</h2>
+    <p>Butter Chicken is a beloved dish in Mumbai, featuring tender chicken pieces cooked in a creamy, tomato-based sauce flavoured with butter, cream, and a blend of aromatic spices. It's typically served with naan bread or rice, and garnished with fresh cilantro. </p>    
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food6')">Looking for restaurants</button>
+  </div>
+  </section>
+</div>
+
+
+<div class="card-container">
+  <section class="card" id="vadapav">
+    <img src="assets_mumbai/vadapav.jpg" alt="VADA PAV" />
+        <h2>VADA PAV</h2>
+        <p>Vada pav is a vegetarian fast food dish native to the Indian state of Maharashtra. The dish consists of a deep fried potato dumpling placed inside a bread bun (pav) sliced almost in half through the middle. It is generally accompanied with one or more chutneys and a green chili pepper. Although it originated as an affordable street food in Mumbai, it is now served in food stalls and restaurants across India. It is also called Bombay burger.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food7')">Looking for restaurants</button>
+   </div>
+  </section>
+
+  <section class="card" id="pavbhaji">
+    <img src="assets_mumbai/pavbhaji.webp" alt="PAV BHAJI" />
+        <h2>PAV BHAJI</h2>
+        <p>Pav bhaji is a street food dish from Mumbai, India consisting of a thick vegetable curry (bhaji) served with a soft bread roll (pav). It originated in the city of Mumbai, Maharashtra. The dish originated as a fast lunchtime dish for textile mill workers in Mumbai. Pav bhaji was later served at restaurants throughout the city. Pav bhaji is now offered at outlets from simple hand carts to formal restaurants in India and abroad.</p>    
+     <div class="card-dropdown">
+        <button class="card-button" onclick="scrollToSection('food8')">Looking for restaurants</button>
+      </div>
+  </section>
+
+  <section class="card" id="kolhapurimutton">
+    <img src="assets_mumbai/kolhapurimutton.jpg" alt="KOLHAPURI MUTTON" />
+        <h2>KOLHAPURI MUTTON</h2>
+        <p>Kolhapuri Mutton is a spicy and flavourful dish originating from the city of Kolhapur in Maharashtra, India. It features tender pieces of mutton (goat meat) cooked in a fiery red gravy made from a blend of aromatic spices, including Kolhapuri masala, which is known for its intense heat and rich flavour. The dish often includes ingredients like onions, garlic, ginger, tomatoes, and dried red chilies, resulting in a bold and robust taste.</p>  
+        <div class="card-dropdown">
+          <button class="card-button" onclick="scrollToSection('food9')">Looking for restaurants</button>
+        </div>
+  </section>
+</div>
+
+<div class="card-container">
+ 
+  <section class="card" id="misalpav">
+    <img src="assets_mumbai/mishalpao.webp" alt="MISAL PAV" />
+    <h2>MISAL PAV</h2>
+    <p>Misal pav is a dish from the Indian state of Maharashtra. It consists of misal (a spicy curry usually made from moth beans) and pav (a type of Indian bread roll). The final dish is topped with farsan or sev, onions, lemon and coriander (cilantro). It is usually served hot with bread or rolls toasted with butter and buttermilk or dahi and papad. It is served as a breakfast dish, as a snack and also as a full meal.</p>    
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food10')">Looking for restaurants</button>
+    </div>
+  </section>
+  <section class="card" id="chickenmanchurian">
+    <img src="assets_mumbai/chickenmanchurian.webp" alt="CHICKEN MANCHURIAN" />
+        <h2>CHICKEN MANCHURIAN</h2>
+        <p>Chicken Manchurian is a popular Indo-Chinese dish found in Mumbai and other parts of India. Chicken Manchurian is often served as an appetiser or main dish, accompanied by fried rice or noodles, and garnished with chopped scallions or cilantro. It's loved for its unique fusion of Indian and Chinese flavours.</p>    
+      <div class="card-dropdown">
+       <button class="card-button" onclick="scrollToSection('food11')">Looking for restaurants</button>
+      </div>  
+  </section>
+  <section class="card" id="puranpoli">
+    <img src="assets_mumbai/puranpoli.jpg" alt="PURAN POLI" />
+        <h2>PURAN POLI</h2>
+        <p>Puran Poli is a traditional Maharashtrian sweet flatbread that is popular in Mumbai and other parts of India. It consists of a soft, thin, unleavened bread filled with a sweet stuffing made from cooked chana dal (split Bengal gram), jaggery (unrefined cane sugar), ghee (clarified butter), and aromatic spices like cardamom and nutmeg. Puran Poli is often enjoyed during festive occasions like Holi and Diwali.</p>   
+      <div class="card-dropdown">
+        <button class="card-button" onclick="scrollToSection('food12')">Looking for restaurants</button>
+      </div>
+  </section>
+</div>
+
+<div class="card-container">
+  <section class="card" id="kandapoha">
+    <img src="assets_mumbai/kandapoha.jpg" alt="KANDA POHA" />
+        <h2>KANDA POHA</h2>
+        <p>Kanda Poha is a popular breakfast or snack dish in Mumbai and Maharashtra, India. It consists of flattened rice flakes (poha) that are sautéed with onions (kanda), mustard seeds, curry leaves, green chilies, and turmeric, along with peanuts and sometimes potatoes. The dish is seasoned with salt and lemon juice for tanginess and garnished with fresh cilantro. </p>   
+      <div class="card-dropdown">
+       <button class="card-button" onclick="scrollToSection('food13')">Looking for restaurants</button>
+      </div>
+  </section>
+  <section class="card" id="falooda">
+    <img src="assets_mumbai/faluda.jpg" alt="FALOODA" />
+        <h2>FALOODA</h2>
+        <p>Falooda is a popular dessert beverage in Mumbai and other parts of India. It typically consists of several layers of ingredients served in a tall glass. Chilled milk often flavored with rose water or vanilla is added for sweetness and aroma. Finally, the Falooda is topped with a scoop of ice cream, usually either vanilla or kulfi (Indian ice cream), along with nuts and dried fruits for garnish.</p>    
+        <div class="card-dropdown">
+          <button class="card-button" onclick="scrollToSection('food14')">Looking for restaurants</button>
+        </div>
+  </section>
+  <section class="card" id="modak">
+    <img src="assets_mumbai/modak.jpeg" alt="MODAK" />
+        <h2>MODAK</h2>
+        <p>Modak is an Indian sweet dish popular in many Indian states and cultures. According to Hindu and Buddhist beliefs, it is one of the favourite dishes of Ganesha and the Buddha and is therefore used in prayers. The sweet filling inside a modak consists of freshly grated coconut and jaggery, while the outer soft shell is made from rice flour or wheat flour mixed with khowa or maida flour.</p>    
+        <div class="card-dropdown">
+          <button class="card-button" onclick="scrollToSection('food15')">Looking for restaurants</button>
+         </div>
+  </section>
+</div>
+
+<script>
+  document.querySelectorAll('.card-button').forEach(function(button) {
+    button.addEventListener('click', function() {
+      button.parentElement.classList.toggle('hidden');
+      button.parentElement.nextElementSibling.classList.toggle('show');
+    });
+  });
+    
+  function scrollToSection(sectionId) {
+    window.location.href = "kolkata_restaurants.html#" + sectionId;
+}
+</script>
+
+</body>
+</html>

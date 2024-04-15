@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chennai's Delicacies</title>
+<meta name="theme-color" content="#FFD700">
+<meta name="description" content="Explore the rich history and taste of South-Indian cuisines all over Tamil Nadu on our web page. Dive into the glorious past and dip your food in its taste and just relax!!!">
+<link rel="icon" href="assets/logo.png" type="image/x-icon">
+<style>
+  h1{
+    color: yellow;
+    text-align: center;
+  }
+  
+  body {
+    background-image: url("assets_chennai/backg.jpg");
+    background-size: 1050px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+  }
+  /* Style for horizontal cards */
+  .card-container {
+    display: flex;
+    flex-wrap: nowrap;  /* Removed nowrap */
+    overflow-x: auto; 
+    gap: 30px; 
+    padding: 20px;
+  }
+  
+  .card {
+    background-image: url("assets_chennai/cardbg.jpg");
+    background-size: 590px;
+    flex: 0 0 auto; 
+    width: 550px; 
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(244, 216, 4, 0.973);
+  }
+
+  .card-button {
+    display: block;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+
+    .card.active .card-button {
+      display: block;
+    }
+    
+
+.card-button:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.card {
+  cursor: pointer;
+    }
+
+  .card p{
+    color: aqua;
+    text-align:justify ;
+    font-family: Papyrus;
+   }
+   .card h2{
+    color: whitesmoke;
+    text-align: center;
+   }
+  img {
+  width: 550px;
+  height: 330px;
+  border-radius: 30px;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: calc(50% - 20px); /* Two cards per row */
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-wrap: wrap; 
+    overflow-x: visible; 
+  }
+  .card {
+    width: 90%; 
+    background-size: cover;
+  }
+  .card img {
+    max-width: 100%; 
+    height: auto; 
+  }
+}
+
+</style>
+</head>
+<body>
+  <h1>
+    DELICIOUS CHENNAI FOODS 
+  </h1>
+
+<div class="card-container">
+  <section class="card" id="masala-dosa">
+      <img src="assets_chennai/masala_dosa.webp" alt="MASALA DOSA" />
+    <h2>MASALA DOSA</h2>
+    <p>Indulge in the irresistible delight of masala dosa: a South Indian culinary masterpiece! Crispy, golden crepe enveloping a savory filling of spiced potatoes, served with coconut chutney and sambar for a truly flavorful experience.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food1')">Looking for restaurants</button>
+    </div>
+  </section>
+
+  <section class="card" id="idli-sambar">
+    <img src="assets_chennai/idli_sambhar.jpg" alt="IDLI SAMBAR" />
+    <h2>IDLI SAMBAR</h2>
+    <p>Idli Sambhar is a South Indian delicacy loved for its soft, fluffy idlis served with a flavorful lentil-based sambhar. This comforting dish is a perfect blend of savory and tangy flavors, making it a favorite breakfast or snack across India.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food2')">Looking for restaurants</button>
+    </div>
+  </section>
+
+  <section class="card" id="chicken-chettinad">
+    <img src="assets_chennai/chicken_chettinad.jpeg" alt="CHICKEN CHETTINAD" />
+    <h2>CHICKEN CHETTINAD</h2>
+    <p>Chicken Chettinad is a spicy and aromatic dish from the Chettinad region of Tamil Nadu, India. It boasts a rich blend of roasted spices, coconut, and curry leaves, creating a tantalizing flavor profile that pairs perfectly with steamed rice or flaky parathas.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food3')">Looking for restaurants</button>
+    </div>
+  </section>
+</div>
+
+
+
+<div class="card-container">
+    <section class="card" id="biryani">
+        <img src="assets_chennai/biriyani.jpg" alt="BIRYANI" />
+        <h2>BIRYANI</h2>
+    <p>Biryani is a mixed rice dish, mainly popular in South Asia. It is made with rice, some type of meat (chicken, beef, prawn, or mutton) and spices in Chennai.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food4')">Looking for restaurants</button>
+  </div>
+  </section>
+  <section class="card" id="appam-with-stew">
+    <img src="assets_chennai/appam_with_stew.jpg" alt="APPAM WITH STEW" />
+    <h2>APPAM WITH STEW</h2>
+    <p> Indulge in the delicate flavors of South India with soft, lacy appams paired perfectly with aromatic stew, a tantalizing blend of vegetables and spices, offering a culinary journey like no other.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food5')">Looking for restaurants</button>
+  </div>
+  </section>
+  <section class="card" id="thalassery-biryani">
+    <img src="assets_chennai/thallesari_biriyani.jpg" alt="THALASSERY BIRYANI" />
+    <h2>THALASSERY BIRYANI</h2>
+    <p>Experience the rich heritage of Malabar cuisine with Thalassery biryani, fragrant basmati rice layered with succulent meat, caramelized onions, and an exquisite blend of spices, promising a symphony of flavors in every bite.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food6')">Looking for restaurants</button>
+  </div>
+  </section>
+</div>
+
+
+<div class="card-container">
+    <section class="card" id="chettinad-chicken-fry">
+        <img src="assets_chennai/chicken_chettinad.jpeg" alt="CHETTINAD CHICKEN FRY" />
+        <h2>CHETTINAD CHICKEN FRY</h2>
+    <p>Indulge in the fiery flavors of Chettinad cuisine with succulent chicken pieces marinated in a blend of aromatic spices and fried to perfection, delivering a tantalizing burst of taste with every bite.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food7')">Looking for restaurants</button>
+  </div>
+  </section>
+
+  <section class="card" id="rasam">
+    <img src="assets_chennai/rasam.jpeg" alt="RASAM" />
+    <h2>RASAM</h2>
+    <p>Experience the comforting warmth of traditional South Indian rasam, a soul-soothing broth infused with tangy tamarind, aromatic spices, and a hint of peppery goodness, guaranteed to invigorate your senses.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food8')">Looking for restaurants</button>
+  </div>
+  </section>
+
+  <section class="card" id="adai-avial">
+    <img src="assets_chennai/adai_avial.jpg" alt="ADAI AVIAL" />
+    <h2>ADAI AVIAL</h2>
+    <p>Delight in the wholesome goodness of adai avial, a nutritious pancake made from a medley of lentils and rice, served with a side of avial—a creamy coconut and vegetable stew—creating a harmonious symphony of flavors and textures.</p>
+  <div class="card-dropdown">
+    <button class="card-button" onclick="scrollToSection('food9')">Looking for restaurants</button>
+  </div>
+  </section>
+</div>
+
+<div class="card-container">
+ 
+    <section class="card" id="pongal">
+        <img src="assets_chennai/pongal.jpg" alt="PONGAL" />
+        <h2>PONGAL</h2>
+    <p>Pongal, a South Indian delicacy, is a savory dish made with rice, lentils, and spices, symbolizing abundance and prosperity. Its rich flavor and creamy texture make it a delightful treat during the festive season.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food10')">Looking for restaurants</button>
+    </div>
+  </section>
+  <section class="card" id="mysore-pak">
+    <img src="assets_chennai/mysore_pak.webp" alt="MYSORE PAK" />
+    <h2>MYSORE PAK</h2>
+    <p>Mysore Pak, originating from the royal kitchens of ancient South-India, is a melt-in-your-mouth sweet made from gram flour, ghee, and sugar. Its soft, crumbly texture and aromatic ghee flavor make it an irresistible indulgence during celebrations.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food11')">Looking for restaurants</button>
+  </div>  
+  </section>
+  <section class="card" id="rava-kesari">
+    <img src="assets_chennai/rava_kesari.jpg" alt="RAVA KESARI" />
+    <h2>RAVA KESARI</h2>
+    <p>Rava Kesari, a traditional Indian dessert, is made from semolina, ghee, sugar, and flavored with cardamom and saffron. Its vibrant color and heavenly aroma make it a popular choice for festivals and special occasions, delighting taste buds with its sweet and fragrant essence.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food12')">Looking for restaurants</button>
+    </div>
+  </section>
+</div>
+
+<div class="card-container">
+    <section class="card" id="badam-halwa">
+        <img src="assets_chennai/badam_halwa.jpg" alt="BADAM HALWA" />
+        <h2>BADAM HALWA</h2>
+    <p>Indulge in the rich, nutty delight of Badam Halwa, a traditional Indian sweet made from almonds, ghee, and sugar. Its heavenly taste and velvety texture make it a favorite during festive occasions.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food13')">Looking for restaurants</button>
+  </div>
+  </section>
+  <section class="card" id="adhirasam">
+    <img src="assets_chennai/adhirasam.jpeg" alt="ADHIRASAM" />
+    <h2>ADHIRASAM</h2>
+    <p> Experience the crispy sweetness of Adhirasam, a deep-fried South Indian delicacy made from rice flour, jaggery, and cardamom. Its aromatic flavors and unique texture make it a cherished treat during celebrations.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food14')">Looking for restaurants</button>
+    </div>
+  </section>
+  <section class="card" id="paniyaram">
+    <img src="assets_chennai/paniyaram.jpg" alt="PANIYARAM" />
+    <h2>PANIYARAM</h2>
+    <p>Delight in the fluffy goodness of Paniyaram, a South Indian snack prepared by steaming a batter made from fermented rice and lentils. Enjoy its spongy texture and versatility as a savory or sweet dish.</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="scrollToSection('food15')">Looking for restaurants</button>
+    </div>
+  </section>
+</div>
+
+<script>
+  document.querySelectorAll('.card-button').forEach(function(button) {
+    button.addEventListener('click', function() {
+      button.parentElement.classList.toggle('hidden');
+      button.parentElement.nextElementSibling.classList.toggle('show');
+    });
+  });
+    
+  function scrollToSection(sectionId) {
+    window.location.href = "kolkata_restaurants.html#" + sectionId;
+}
+</script>
+
+</body>
+</html>

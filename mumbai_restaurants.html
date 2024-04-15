@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mumbai's Restaurants</title>
+<meta name="theme-color" content="#FFD700">
+<meta name="description" content="Explore the rich history and taste of Marathi cuisines all over Maharashtra on our web page. Dive into the glorious past and dip your food in its taste and just relax!!!">
+<link rel="icon" href="assets/logo.png" type="image/x-icon">
+<style>
+  h1{
+    color: teal;
+    text-align: center; 
+  }
+  body {
+    background-image: url("assets_mumbai/restbg.jpg");
+    background-size: 1910px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+  }
+  /* Style for horizontal cards */
+  .card-container {
+    display: flex;
+    flex-wrap: nowrap;  /* Removed nowrap */
+    overflow-x: auto; 
+    gap: 30px; 
+    padding: 20px;
+  }
+  
+  .card {
+    background-image: url("assets_mumbai/restcardbg.jpg");
+    background-size: 590px;
+    flex: 0 0 auto; 
+    width: 550px; 
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(244, 216, 4, 0.973);
+  }
+
+  .card p{
+    color: cadetblue;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+   .card h2{
+    color: mediumspringgreen;
+    text-align: center;
+   }
+  img {
+  width: 550px;
+  height: 400px;
+  border-radius: 30px;}
+
+  .card-button {
+    display: block;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+
+    .card.active .card-button {
+      display: block;
+    }
+    
+
+.card-button:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.card {
+  cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .card-container {
+        flex-wrap: wrap;
+        overflow-x: visible;
+      }
+      .card {
+        width: 90%;
+        background-size: cover;
+      }
+      .card img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+</style>
+</head>
+<body>
+
+  <h1>
+    BATATA VADA 
+  </h1>
+  <section class="card-container" id="food1">
+    <div class="card">
+      <img src="assets_mumbai/shri_krishna_batavada.jpg" alt="SHREE KRISHNA BATATA VADA" />
+      <h2>SHREE KRISHNA BATATA VADA</h2>
+      <p>Address :- Radha Niwas, 7, Chabildas Rd, Dadar West, Mumbai, Maharashtra 400028</p>
+      <p>Price for two Rs 200<br>
+        rating 4.6</p>      
+      <!-- <div class="card-dropdown">
+        <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+      </div>  -->
+    </div>
+    
+    <div class="card">
+      <img src="assets_mumbai/batata_vada_samrat.avif" alt="BATATA VADA SAMRAT" />
+      <h2>BATATA VADA SAMRAT</h2>
+      <p>Address :- Tilak Rd, Near Santacruz Station, Colabbag, Bajaj Wadi, Railway Colony, Santacruz West, Mumbai, Maharashtra 400054</p>
+      <p>Price for two Rs 300<br>
+        rating 4.3</p>      
+      <!-- <div class="card-dropdown">
+        <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+      </div> -->
+    </div>
+
+    <div class="card">
+      <img src="assets_mumbai/shri_vittal_vada.avif" alt="SHREE VITHAL VADAPAV" />
+    <h2>SHREE VITHAL VADAPAV</h2>
+    <p>Address :- No. 46, Chawl, Sewri Koliwada Rd, Sewri, Mumbai, Maharashtra 400015</p>
+    <p>Price for two Rs 100<br>
+      rating 4.1</p>   
+      <!-- <div class="card-dropdown">
+        <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+      </div> -->
+    </div>
+    
+    
+</section>
+
+<h1>
+  THE BOMBAY SANDWICH
+</h1>
+<section class="card-container" id="food2">
+  <div class="card">
+    <img src="assets_mumbai/sandwizza.jpg" alt="SANDWIZZAA" />
+    <h2>SANDWIZZAA</h2>
+    <p>Address :- Shop no 14, Delta Vrindavan, next to Baba Falooda, Siddhi Vinayak Nagar, Mahajan Wadi, Mira Road East, Mumbai, Mira Bhayandar, Maharashtra 401107</p>
+    <p>Price for two Rs 150<br>
+      rating 4.3</p>
+      <!--<div class="card-dropdown">
+        <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+      </div>-->
+  </div>
+
+  <div class="card">
+    <img src="assets_mumbai/raju_sandwich.avif" alt="RAJU SANDWICH STALL" />
+    <h2>RAJU SANDWICHWALA</h2>
+    <p>Address :- behind samrat hotel, next to the J, Churchgate, Mumbai, Maharashtra 400020</p>
+    <p>Price for two Rs 400<br>
+      rating 4.2</p>  
+    <!-- <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+    </div> -->
+  </div>
+  <div class="card">
+    <img src="assets_mumbai/akkad_bakkad.jpg" alt="AKKAD BAKKAD BOMBAY BOO SANDWICH SHOP" />
+    <h2>AKKAD BAKKAD BOMBAY BOO</h2>
+    <p>Address :- BMC Office, KK Meena Suthar Marg R/S Ward, Mahatma Gandhi Cross Rd Number 3, Kandivali West, Mumbai, Maharashtra 400067</p>
+    <p>Price for two Rs 400 - 800<br>
+      rating 4.1</p>
+    <!-- <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+    </div> -->
+  </div>
+  
+
+</section>
+
+<h1>
+  BHELPURI 
+</h1>
+<section class="card-container" id="food3">
+  <div class="card">
+    <img src="assets_mumbai/prashant_corner.webp" alt="PRASHANT CORNER" />
+        <h2>PRASHANT CORNER</h2>
+        <p>Address :- Bawa Tower Plot No 46/41, Vashi Sector 17, Navi Mumbai - 400703 (Big Splash, Shop No 40/41 Sector 17)</p>
+        <p>Price for two Rs 500<br>
+          rating 4.6</p>  
+      <div class="card-dropdown">
+        <button class="card-button" onclick="openWebsite('https://prashantcorner.com/')">Visit Website</button>
+      </div> 
+  </div>
+  <div class="card">
+    <img src="assets_mumbai/sharma_bhelpuri.jpg" alt="SHARMA BHELPURI HOUSE" />
+        <h2>SHARMA BHELPURI HOUSE</h2>
+        <p>Address :- 4R2W+8FR, Kamla Bhawan, Mahatma Gandhi Rd, Opp. Municipal Garden, Vile Parle East, Mumbai, Maharashtra 400057</p>
+        <p>Price for two Rs 400<br>
+          rating 4.2</p>
+        <!-- <div class="card-dropdown">
+          <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+        </div> -->
+  </div>
+
+  <div class="card">
+    <img src="assets_mumbai/gupta_bhelpuri_centre.avif" alt="GUPTA BHEL PURI CENTER" />
+        <h2>GUPTA BHEL PURI CENTRE</h2>
+        <p>Address :- Shop No 1, Excel House, B J Road, Malad West, Mumbai - 400064</p>
+        <p>Price for two Rs 200<br>
+          rating 3.6</p>
+      <!-- <div class="card-dropdown">
+        <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+      </div> -->
+  </div>
+</section>
+
+<h1>
+  CHICKEN MAYO ROLL
+</h1>
+<section class="card-container" id="food4">
+  <div class="card">
+    <img src="assets_mumbai/hearschbakery.jpg" alt="HEARSCH BAKERY" />
+        <h2>HEARSCH BAKERY</h2>
+        <p>Address :- 90 A, Hill Rd, next to Holy Family Hospital, Bandra West, Mumbai, Maharashtra 400050 </p>
+        <p>Price for two Rs 400 - 800<br>
+          rating 4.4</p>
+    <!--<div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+    </div>-->
+  </div> 
+  
+  <div class="card">
+    <img src="assets_mumbai/kk_frankie.jpg" alt="KK ROLLS" />
+    <h2>KK ROLLS</h2>
+    <p>Address :- Shop No.1, Bara Chawl, 5/ 19, Senapati Bapat Marg, Nagin Nagar Chawl, Lower Parel, Mumbai, Maharashtra 400013</p>
+    <p>Price for two Rs 400<br>
+      rating 4.3</p>
+    <!--<div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+    </div>-->
+  </div>
+  <div class="card">
+    <img src="assets_mumbai/bademiya.jpg" alt="BADEMIYA" />
+        <h2>BADEMIYA</h2>
+        <p>Address :- Shop No. 2-B, Ground Floor, Geeta Niketan, Linking Rd, near SHOPPERS STOP, Bandra West, Mumbai, Maharashtra 400050</p>
+        <p>Price for two Rs 400<br> 
+          rating 4</p>  
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://bademiya.com/')">Visit Website</button>
+    </div>
+  </div>
+</section>
+
+<h1>
+  RAGDA PATTICE
+</h1>
+<section class="card-container" id="food5"> 
+  
+  <div class="card">
+    <img src="assets_mumbai/gurukripa.webp" alt="GURU KRIPA" />
+    <h2>GURU KRIPA</h2>
+    <p>Address :- Plot No 40, Guru Kripa Building, Road No 24, Sion, Mumbai - 400022 (Near Sies College & Railway Station)</p>
+    <p>Price for two Rs 300<br>
+      rating 4.6</p>
+      <div class="card-dropdown">
+        <button class="card-button" onclick="openWebsite('https://www.gurukripasion.com/')">Visit Website</button>
+      </div>
+  </div>
+  <div class="card">
+    <img src="assets_mumbai/sheetal_bukhara.webp" alt="SHEETAL BUKHARA" />
+    <h2>SHEETAL BUKHARA</h2>
+    <p>Address :- Telephone Exchange, Off Linking Rd, opp. Linking Road Khar Bus Stop, Khar, Khar West, Mumbai, Maharashtra 400052</p>
+    <p>Price for two Rs 1200<br>
+      rating 4.6</p>
+      <div class="card-dropdown">
+        <button class="card-button" onclick="openWebsite('https://www.sheetalbukhara.com/home.html')">Visit Website</button>
+      </div>
+  </div>
+  <div class="card">
+    <img src="assets_mumbai/elco.avif" alt="ELCO" />
+        <h2>ELCO</h2>
+        <p>Address :- 2/ A Elco Arcade, Hill Road, Bandra West, Mumbai - 400050 (Next to Reliance Mall)</p>
+        <p>Price for two Rs 400<br>
+          rating 4.4</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://www.elcorestaurants.com/')">Visit Website</button>
+    </div>
+  </div>
+</section>
+
+<h1>
+  BUTTER CHICKEN
+</h1>
+<section class="card-container" id="food6">
+  <div class="card">
+    <img src="assets_mumbai_restaurants/0c9d927ddf0d3b7165c8c9d1cbe61261.avif" alt="PALI BHAVAN" />
+    <h2>PALI BHAVAN</h2>
+    <p>Address :- 10, Pali Mala Rd, Adarsh Nagar, Bandra West, Mumbai, Maharashtra 400050</p>
+    <p>Price for two Rs 1500<br>
+      rating 4.7</p>
+      <!--<div class="card-dropdown">
+        <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+      </div>-->
+  </div>
+  
+  <div class="card">
+    <img src="assets_mumbai/shalimar_restaurant.jpeg" alt="SHALIMAR RESTAURANT" />
+      <h2>SHALIMAR RESTAURANT</h2>
+      <p>Address :- APMC Marker Road Sector-19/C Shop No.7 Plot No.7/8, Vashi, Navi Mumbai, Maharashtra 400703</p>
+      <p>Price for two Rs 950<br>
+        rating 4.1</p>    
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://www.shalimarrestaurants.co/')">Visit Website</button>
+    </div>
+  </div> 
+
+  <div class="card">
+    <img src="assets_mumbai/ashok_vada_pav.jpg" alt="ASHOK VADA PAV" />
+    <h2>ASHOK VADA PAV</h2>
+    <p>Address :- Kashinath Dhuru Marg, Dadar West, Dadar, Mumbai, Maharashtra 400028</p>
+    <p>Price for two Rs 200<br>
+      rating 3.8</p>
+      <!--<div class="card-dropdown">
+        <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+      </div>-->
+  </div>
+</section>
+<h1>
+  VADA PAV 
+</h1>
+<section class="card-container" id="food7">
+  <div class="card">
+    <img src="assets_mumbai/aram_vadapav.avif" alt="ARAM VADA PAV" />
+      <h2>ARAM VADA PAV</h2>
+      <p>Address :- Capital Cinema Building, 126, Dr Dadabhai Naoroji Rd, Azad Maidan, Fort, Mumbai, Maharashtra 400001</p>
+      <p>Price for two Rs 200<br>
+        rating 4.6</p>
+    <!--<div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+    </div>-->
+  </div> 
+
+  <div class="card">
+    <img src="https://content.jdmagicbox.com/comp/mumbai/r1/022pxx22.xx22.220125103932.g9r1/catalogue/vidarbha-vada-pav-vile-parle-east-mumbai-vada-pav-centres-ns3sbn9thx.jpg" alt="VIDARBHA VADA PAV" />
+      <h2>VIDARBHA VADA PAV</h2>
+      <p>Address :- 18, Ram Mandir Rd, Navpada, Vile Parle East, Vile Parle, Mumbai, Maharashtra 400057</p>
+      <p>Price for two Rs 200<br>
+        rating 4.4</p>
+    <!--<div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+    </div>-->
+  </div> 
+
+  <div class="card">
+    <img src="assets_mumbai/bansi.avif" alt="BANSI VADAPAV" />
+      <h2>BANSI VADAPAV</h2>
+      <p>Address :- Shop No.4, Gupta Cottage, Chincholi Bunder Rd, opp. BMC School, Malad, Chincholi Bunder, Malad West, Mumbai, Maharashtra 400064</p>
+      <p>Price for two Rs 100<br>
+        rating 4.3</p>
+    <!--<div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+    </div>-->
+  </div>
+  
+</section>
+
+<h1>
+  PAV BHAJI
+</h1>
+<section class="card-container" id="food8">
+    <div class="card">
+        <img src="https://foto2.sluurpy.com/locali/in/4514114/71275625.jpg" alt="SHREE SIDDHIVINAYAK FAST FOOD" />
+          <h2>SHREE SIDDHIVINAYAK FAST FOOD</h2>
+          <p>Address :- 1, Juhu Tara Rd, Nazir Wadi, Theosophical Housing Colony, Juhu, Mumbai, Maharashtra 400049</p>
+          <p>Price for two Rs 450<br>
+            rating 4.4</p>
+        <!--<div class="card-dropdown">
+          <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+        </div>-->
+      </div>
+
+  <div class="card">
+    <img src="assets_mumbai/bhagwati_pav_bhaji.jpeg" alt="BHAGWATI PAV BHAJI" />
+      <h2>BHAGWATI PAV BHAJI</h2>
+      <p>Address :- 6, Laxmi Chand CHS, Mathuradas Road, opposite Vanja Wadi, Kandivali, Kamala Nagar, Dahanukar Wadi, Kandivali West, Mumbai, Maharashtra 400067</p>
+      <p>Price for two Rs 400<br>
+        rating 4.2</p>
+    <!--<div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+    </div>-->
+  </div>
+
+  <div class="card">
+    <img src="assets_mumbai/sukh_sagar.avif" alt="SUKH SAGAR" />
+      <h2>SUKH SAGAR</h2>
+      <p>Address :- Ramsheth Thakur International Sports Complex, Navi Mumbai - 410206</p>
+      <p>Price for two Rs 200 - 400<br>
+        rating 4.1</p>
+    <!--<div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+    </div>-->
+  </div> 
+</section>
+
+<h1>
+  KOLHAPURI MUTTON
+</h1>
+<section class="card-container" id="food9">
+  <div class="card">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/18/02/82/5b/img-20190620-134444-largejpg.jpg" alt="DIVA MAHARASHTRACHA" />
+      <h2>DIVA MAHARASHTRA CHA</h2>
+      <p>Address :- Mili Building, Takandas Kataria Marg, next to Goa Portuguesa Restobar, T.H, Shivaji Park, Mumbai, Maharashtra 400016</p>
+      <p>Price for two Rs 1000 - 2000<br>
+        rating 4.4</p>
+        <div class="card-dropdown">
+            <button class="card-button" onclick="openWebsite('https://www.divamaharashtracha.com/')">Visit Website</button>
+          </div>
+  </div> 
+  <div class="card">
+    <img src="https://content.jdmagicbox.com/comp/navi-mumbai/u2/022pxx22.xx22.200225070832.v3u2/catalogue/kolhapuri-kanteen-airoli-navi-mumbai-restaurants-rwc5b7xfak.jpg" alt="KOLHAPURI KANTEEN" />
+      <h2>KOLHAPURI KANTEEN</h2>
+      <p>Address :- Shop No.1, Plot, No.4, Sector 2 Airoli Rd, near Modi Hospital, Sector 2, Airoli, Navi Mumbai, Maharashtra 400708</p>
+      <p>Price for two Rs 500 - 1000<br>
+        rating 4.3</p> 
+  </div>
+
+  <div class="card">
+    <img src="https://content.jdmagicbox.com/comp/mumbai/n3/022pxx22.xx22.160421113617.v6n3/catalogue/khula-rassa-kharghar-mumbai-sea-food-restaurants-1Puy3m5nbb5LwJK.jpg" alt="KHULA RASSA" />
+      <h2>KHULA RASSA</h2>
+      <p>Address :- F45/30, Sector-12, Near Shivaji Chowk, Mumbai - Navi Mumbai, Maharashtra 410210</p>
+      <p>Price for two Rs 500 - 1000<br>
+        rating 4.1</p>
+        <!-- <div class="card-dropdown">
+            <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+          </div> -->
+  </div> 
+  
+  
+</section>
+
+<h1>
+  MISAL PAV
+</h1>
+<section class="card-container" id="food10">
+
+    <div class="card">
+        <img src="assets_mumbai/pandit_misal_pav.avif" alt="PANDIT MISAL CENTER" />
+         <h2>PANDIT MISAL CENTER</h2>
+         <p>Address :-  X4VF+VM8, Sector 14, New Panvel East, Panvel, Navi Mumbai, Maharashtra 410206</p>
+         <p>Price for two Rs 200<br>
+           rating 4.4</p>
+           <!--<div class="card-dropdown">
+             <button class="card-button" onclick="openWebsite('https://suruchimisal.lokal.in/')">Visit Website</button>
+           </div>-->
+     </div>
+
+  <div class="card">
+    <img src="assets_mumbai/house_of_misal.webp" alt="THE HOUSE OF MISAL" />
+      <h2>THE HOUSE OF MISAL</h2>
+      <p>Address :- Shop no, 329A, N C. Kelkar Marg, Near Plaza Cinema, Kasaravadi, Dadar, Mumbai, Maharashtra 400028</p>
+      <p>Price for two Rs 300<br>
+        rating 4.0</p>
+  </div>
+  <div class="card">
+    <img src="assets_mumbai/mamledar_misal.webp" alt="MAMLEDAR MISAL" />
+    <h2>MAMLEDAR MISAL</h2>
+    <p>Address :- Shop No 32, Kirtikar Market, M C Jawle Marg, Dadar West, Mumbai - 400028 (Kabutar Khana)</p>
+    <p>Price for two Rs 200<br>
+      rating 3.6</p>
+    <!--<div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+    </div>-->
+</div>
+
+  
+</section>
+
+<h1>
+  CHICKEN MANCHURIAN 
+</h1>
+<section class="card-container" id="food11">
+  <div class="card">
+    <img src="assets_mumbai/persian_darbar.jpg" alt="PERSIAN DARBAR" />
+      <h2>PERSIAN DARBAR</h2>
+      <p>Address :- CST Road Junction Shop No. 17, Kanikka Zillion, LBS Marg, BKC Annexe, Kurla West, Mumbai - 400070 </p>
+      <p>Price for two Rs 750<br>
+        rating 4.3</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://persiandarbar.in/')">Visit Website</button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="assets_mumbai/7_islands.avif" alt="7 ISLANDS" />
+    <h2>7 ISLANDS</h2>
+    <p>Address :- Unit No. 2 & 3, CIEM Industrial Estate, Ramchandra Ln, Malad, Ext, Kanchpada, Malad West, Mumbai, Maharashtra 400064</p>
+    <p>Price for two Rs 650<br>
+      rating 4.3</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://www.7islands.in/')">Visit Website</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="assets_mumbai/raju_cheese.webp" alt="RAJU'S CHINESE CORNER" />
+      <h2>RAJU'S CHINESE CORNER</h2>
+      <p>Address :- Chandavarkar Rd, Shanti Nagar, Borivali West, Mumbai, Maharashtra 400091</p>
+      <p>Price for two Rs 200<br>
+        rating 3.7</p>
+    <!--<div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+    </div>-->
+  </div> 
+</section>
+
+<h1>
+  PURAN POLI
+</h1>
+<section class="card-container" id="food12">
+  <div class="card">
+    <img src="assets_mumbai/chapati_express.avif" alt="CHAPATI EXPRESS" />
+      <h2>CHAPATI EXPRESS</h2>
+      <p>Address :- Shop No.2, Ground Floor, Vaibhav Sadan, Swapnil Niwas, No.0, Road, opposite EPSILON TOWER, Kandivali, Singh Agri Estate, Kandivali East, Mumbai, Maharashtra 400101</p>
+      <p>Price for two Rs 100<br>
+        rating 4.7</p>
+    <!--<div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+    </div>-->
+  </div> 
+  <div class="card">
+    <img src="assets_mumbai/murlidhar_sweets.webp" alt="MURLIDHAR SWEETS AND FARSAN" />
+    <h2>MURLIDHAR SWEETS AND FARSAN</h2>
+    <p>Address :- Shop No. 4/5, Maharashtra Market, C S Road, Dahisar East, Mumbai - 400068 (Opposite Manek Apartment,Near Save Nagar, Near Jari Mari Garden)</p>
+    <p>Price for two Rs 200<br>
+      rating 4.7</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://www.murlidharsweets.com/')">Visit Website</button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="assets_mumbai/khichdi_express.avif" alt="KHICHDI EXPRESS" />
+      <h2>KHICHDI EXPRESS</h2>
+      <p>Address :- Shop No 1, Devrokarwadi, New Link Rd, Mindspace, Malad West, Mumbai, Maharashtra 400064</p>
+      <p>Price for two Rs 200<br>
+        rating 4.3</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://khichdiexpress.com/')">Visit Website</button>
+    </div>
+  </div>
+
+  
+</section>
+
+<h1>
+  KANDA POHA
+</h1>
+<section class="card-container" id="food13">
+  <div class="card">
+    <img src="assets_mumbai/the_bombay_canteen.jpg" alt="THE BOMBAY CANTEEN" />
+      <h2>THE BOMBAY CANTEEN</h2>
+      <p>Address :-  Unit-1, Process House, S.B. Road, Kamala Mills, Near Radio Mirchi Office Lower, Parel, Mumbai, Maharashtra 400013</p>
+      <p>Price for two Rs 1800<br>
+        rating 4.6</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://thebombaycanteen.com/?utm_source=TTB_GMB&utm_medium=TTB_GMB&utm_campaign=TTB_GMB_LocalSEO')">Visit Website</button>
+    </div>
+  </div> 
+  <div class="card">
+    <img src="assets_mumbai/kaka_naca_poha.jpeg" alt="KAKA NA CHA POHA" />
+      <h2>KAKA NA CHA POHA</h2>
+      <p>Address :- 1, Swami Vivekananda Rd, Shastri Nagar, Dattani Nagar, Borivali West, Mumbai, Maharashtra 400092</p>
+      <p>Price for two Rs 200<br>
+        rating 4.3</p>
+        <!--<div class="card-dropdown">
+          <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+        </div>-->
+  </div>
+
+  <div class="card">
+    <img src="assets_mumbai/ladu_samrat.jpg" alt="LADU SAMRAT" />
+      <h2>LADU SAMRAT</h2>
+      <p>Address :- Shop No.: 1 Habib Terrace Lalbaug, Dr Baba Saheb Ambedkar Rd, Ganesh Gully, Parel, Mumbai, Maharashtra 400012</p>
+      <p>Price for two Rs 300<br>
+        rating 4.2</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://www.ladusamrat.in/')">Visit Website</button>
+    </div>
+  </div>
+</section>
+
+<h1>
+  FALOODA
+</h1>
+<section class="card-container" id="food14">
+  <div class="card">
+    <img src="assets_mumbai_restaurants/f2aa7bb91e3dae628e3892b45f6f5793.avif" alt="BABA FALOODA" />
+      <h2>BABA FALOODA</h2>
+      <p>Address :- 1-2, Bellview Mansion, LJ Cross Road, Lady Jamshedji Rd, Mahim, Mumbai, Maharashtra 400016</p>
+      <p>Price for two Rs 150<br>
+        rating 4.6</p>
+    <!--<div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+    </div>-->
+  </div> 
+
+  <div class="card">
+    <img src="assets_mumbai_restaurants/haji-ali-juice-centre.jpg" alt="HAJI ALI JUICE CENTER" />
+      <h2>HAJI ALI JUICE CENTER</h2>
+      <p>Address :- Lala Lajpatrai Marg, Haji Ali junction, Near the entrance to Haji Ali durgah, Dargah Rd, Mumbai, Maharashtra 400026</p>
+      <p>Price for two Rs 400<br>
+        rating 4.3</p>
+    <div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('https://hajialijuicecentre.in/')">Visit Website</button>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="assets_mumbai/shalimar_restaurant.jpeg" alt="SHALIMAR COOL POINT" />
+      <h2>SHALIMAR COOL POINT</h2>
+      <p>Address :-  Shop No. 28, Lehri Palace, Sardar Vallabhbhai Patel Rd, Null Bazar, Mumbai, Maharashtra 400003</p>
+      <p>Price for two Rs 300<br>
+        rating 4.0</p>
+     <!--<div class="card-dropdown">
+      <button class="card-button" onclick="openWebsite('')">Visit Website</button>
+    </div>-->   
+  </div>
+</section>
+
+<h1>
+  MODAK 
+</h1>
+<section class="card-container" id="food15">
+  <div class="card">
+    <img src="assets_mumbai/morbiwala.avif" alt="MORBIWALA SWEET MART" />
+    <h2>MORBIWALA SWEET MART</h2>
+    <p>Address :-  Shop No 4, Bhakti Park, RHB Road and S L Road Junction, Mulund West, Mumbai - 400082 (Nr Dollar Showroom)</p>
+    <p>Price for two Rs 400<br>
+      rating 4.3</p>
+  <div class="card-dropdown">
+    <button class="card-button" onclick="openWebsite('https://morbiwalasweet.com/')">Visit Website</button>
+  </div>
+</div>
+
+  <div class="card">
+    <img src="assets_mumbai/panshikar.avif" alt="PANSHIKAR" />
+    <h2>PANSHIKAR</h2>
+    <p>Address :- Popatlal Chawl, 5/B, Ranade Rd, near Axis Bank, Dadar West, Dadar, Mumbai, Maharashtra 400028</p>
+    <p>Price for two Rs 300<br>
+      rating 4.0</p>
+      <div class="card-dropdown">
+        <button class="card-button" onclick="openWebsite('https://www.panshikar.com/')">Visit Website</button>
+      </div>
+  </div> 
+  <div class="card">
+    <img src="assets_mumbai/shree_ram.avif" alt="SHREE RAM SWEETS AND FARSAN" />
+      <h2>SHREE RAM SWEETS AND FARSAN</h2>
+      <p>Address :-  Shop No 7 & 8, Sai Dham Building, Saibaba Nagar-borivali West, Mumbai - 400092 (Near Sai Baba Mandir)</p>
+      <p>Price for two Rs 500<br>
+        rating 4.6</p>
+        <div class="card-dropdown">
+          <button class="card-button" onclick="openWebsite('https://shreeramsweets.com/')">Visit Website</button>
+        </div>
+  </div>
+  
+  
+</section>
+
+<script>
+  function openWebsite(url) {
+    window.open(url, "_blank");
+}
+</script>
+</body>
+</html>
